@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-bright-dark: #463939;
+  --primary-subtle-dark: #301d1d;
+  --primary-bright-light: #c6b9b9;
+  --primary-subtle-light: #f5efef;
+  --primary-contrast-color: #ffffff;
+  --secondary-bright-dark: #2d3953;
+  --secondary-subtle-dark: #1d2330;
+  --secondary-bright-light: #acb9d2;
+  --secondary-subtle-light: #eff1f5;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
