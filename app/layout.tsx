@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/Header'
+import ConditionalHeader from '@/components/ConditionalHeader'
 import ConditionalFooter from '@/components/ConditionalFooter'
 import { CartProvider } from '@/components/CartProvider'
 
@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <CartProvider>
-          <Header />
+          <ConditionalHeader />
           <main className="min-h-screen">
             {children}
           </main>
